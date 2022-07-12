@@ -2,7 +2,7 @@
 //  XDismissButton.swift
 //  PokemonSwiftUI
 //
-//  Created by james Jones on 330/06/2022.
+//  Created by james Jones on 30/06/2022.
 //
 
 import SwiftUI
