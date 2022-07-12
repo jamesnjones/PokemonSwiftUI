@@ -21,7 +21,7 @@ struct PokemonDetailView: View {
                 Rectangle()
                     .foregroundColor(Color.white)
                     .frame(maxWidth: .infinity)
-                    .frame(height: 230)
+                    .frame(height: 210)
                     .cornerRadius(10)
                     .shadow(color: Color.black.opacity(0.1), radius: 1, x: 0, y: 1)
                     .shadow(color: Color.black.opacity(0.3), radius: 10, x: 0, y: 10)
@@ -31,7 +31,7 @@ struct PokemonDetailView: View {
                     .frame(width: 320, height: 225)
                     .cornerRadius(8.0)
             }
-            .padding()
+            .padding([.leading, .trailing])
             Spacer()
             VStack {
                 Picker("Stats", selection: $info) {
@@ -55,7 +55,7 @@ struct PokemonDetailView: View {
                         }.padding(20)
                     }
                 } else if info == "Stats" {
-                    VStack(alignment: .leading, spacing: 20.0) {
+                    VStack(alignment: .leading, spacing: 15.0) {
                         StatsTextView(pokemon: pokemon, index: 0, imageName: "heart.fill", title: "HP")
                         StatsTextView(pokemon: pokemon, index: 1, imageName: "line.diagonal.arrow", title: "Attack")
                         StatsTextView(pokemon: pokemon, index: 2, imageName: "shield.fill", title: "Defence")
